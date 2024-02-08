@@ -14,8 +14,6 @@ app.use(express.json());
 // Create a MongoClient
 const client = new MongoClient(uri);
 
-app.use(cors());
-
 app.get("/getHorses", async (req, res) => {
     try {
         // Connect the client to the server
